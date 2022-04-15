@@ -2,7 +2,7 @@ import pyautogui as pya
 import time
 import keyboard
 
-# made the following measures in 1980*1080, feel free to change for other resolutions
+# made the following measures in 1920*1080, feel free to change for other resolutions
 column = 1750 
 upgrades = 150 
 cursors = 310 
