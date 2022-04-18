@@ -7,7 +7,7 @@ import keyboard
 # Control variables 
 curretResolutionX = 1
 curretResolutionY = 1
-controller = True # ;anual stop if needed, pressing q
+controller = True # Manual stop if needed, pressing q
 loops = 1
 targetAscensions = 1000 # Change this number if you don't need to do 1000 ascensions
 endingDelay = loops * 0.05 # Adds a delay before ascending
