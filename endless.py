@@ -95,7 +95,8 @@ legacyY = int( legacyY * curretResolutionY) # 0.0741
 reincarnateX = int( reincarnateX * curretResolutionX) # 0.4922
 reincarnateY = int( reincarnateY * curretResolutionY) #  0.1018
 
-# Starts in 3 seconds, tab into CookieClicker
+# Starts in 3 seconds, tabs into CookieClicker
+pya.hotkey('alt', 'tab')
 print('Starting in 3...')
 time.sleep(1)
 print('Starting in 2...')
