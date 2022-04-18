@@ -7,7 +7,6 @@ import pyautogui as pya
 # mySave = ;)
 
 # Control variables 
-controller = True # Manual stop if needed, pressing q
 loops = 1
 targetAscensions = 1000 # Change this number if you don't need to do 1000 ascensions
 endingDelay = loops * 0.05 # Adds a delay before ascending
@@ -69,16 +68,13 @@ def buyBuildings():
     
 # Adding a manual stop, this will finish the ascension and stop from looping
 def stop():
-    global controller
+    controller = True
     while controller:
         if keyboard.is_pressed('q'):
             print('\t> Key \'q\' pressed, Handmade stopped')
             controller = False
-
-# Adding a wrapper function 
-def oneRound():
-    buyBuildings()
-    stop() # Press q!
+            altTabTo('last')
+            pya.moveTo(0, 0, duration = 0)
     
 # Tab function
 def altTabTo(window):
@@ -90,9 +86,9 @@ def altTabTo(window):
         
 ########################################################################### Start
 thread = threading.Thread(target=stop)
-thread.start()
-print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! This is an script, it will perform automatic actions.\nNow we need some locations of your screen...\n')
 
+print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! This is an script, it will perform automatic actions.\nNow we need some locations of your screen...\n')
+# Loop the dict to record coords
 for item in spotsDict:
     print('In your game, move your cursor where the '+ item + ' is. When ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
     print('Press \'Enter\' to alt-tab to Cookie Clicker.\n\t>')
@@ -109,18 +105,18 @@ for item in spotsDict:
 
 print('Press \'Enter\' to start the fun.\n\t')   
 input()
+thread.start()
 altTabTo('Cookie Clicker')
 pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
 pya.click()
 pya.press('enter')
 
-while controller and loops <= targetAscensions:
-    # Add more oneRounds if you don't achieve +1 prestige with 2 of them
-    oneRound()
-    oneRound() 
+while loops <= targetAscensions:
+    # Add more buyBuildings if you don't achieve +1 prestige with 2 of them
+    buyBuildings()
+    buyBuildings() 
     time.sleep(mediumSleep)
     buyUpgrades()
-    stop() # Press q!
     time.sleep(1+endingDelay) # Maybe this delay is not needed depending on your prestige level
     # Reincarnation sequence
     pya.press('home')
