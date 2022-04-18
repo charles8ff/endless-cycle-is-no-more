@@ -29,7 +29,7 @@ reincarnateX = 0.4922 # reincarnateX = 945
 reincarnateY = 0.1016 # reincarnateY = 110
 
 def buy100s():
-    pya.keyDown('shift')
+    pya.keyDown('shift') #Drifteando por la vida lmao
     pya.click()
     time.sleep(tinySleep)
     pya.click()
