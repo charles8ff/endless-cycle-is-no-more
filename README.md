@@ -6,6 +6,12 @@
 - :exclamation: Remember to _**un-vault**_ any upgrades that might carry between ascensions and toggle the game _**Fullscreen : ON**_, otherwise it will stop from working properly.
 
 Speed of the script may be improved (99% sure by a lot), but my laptop lagged so it might be slower than needed. Change 2 numbers and test your setup.
+
+Package Versions:
+- Python: 3.10
+- PyAutoGUI: 0.9.53
+- keyboard: 0.13.5
+
 > I chose to think about a bunch of code  
 > Instead of clicking a bunch of times.  
 
