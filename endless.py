@@ -1,6 +1,8 @@
-import pyautogui as pya
+import threading
 import time
+
 import keyboard
+import pyautogui as pya
 
 # mySave = ;)
 
@@ -67,10 +69,11 @@ def buyBuildings():
     
 # Adding a manual stop, this will finish the ascension and stop from looping
 def stop():
-    if keyboard.is_pressed('q'):
-        print('>>>>>Key \'q\' pressed, Handmade stopped after the ascension!')
-        global controller
-        controller = False
+    global controller
+    while controller:
+        if keyboard.is_pressed('q'):
+            print('\t> Key \'q\' pressed, Handmade stopped')
+            controller = False
 
 # Adding a wrapper function 
 def oneRound():
@@ -86,6 +89,8 @@ def altTabTo(window):
         pya.getWindowsWithTitle(window)[0].maximize()
         
 ########################################################################### Start
+thread = threading.Thread(target=stop)
+thread.start()
 print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! This is an script, it will perform automatic actions.\nNow we need some locations of your screen...\n')
 
 for item in spotsDict:
@@ -130,3 +135,4 @@ while controller and loops <= targetAscensions:
     pya.click()
     pya.press('enter')
     loops+=1 # Ascensions counter
+    print('ASCENSIONS REMAINING: '+ str(targetAscensions-loops) +'!!!')
