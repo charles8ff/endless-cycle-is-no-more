@@ -77,19 +77,9 @@ def oneRound():
 
 curretResolutionX, curretResolutionY = pya.size()
 print('Is your current resolution: '+ str(curretResolutionX) + ' * ' + str(curretResolutionY) + ' ?\nPress \'Enter\' to continue, press \'Control + C\' to exit')
-column = int( 0.9114 * curretResolutionX)
-upgrades = int( 0.1388 * curretResolutionY)
-cursors = int( 0.2870 * curretResolutionY)
-grandmas = int( 0.3518 * curretResolutionY)
-fractals = int( 0.7778 * curretResolutionY)
-idleverses = int( 0.8889 * curretResolutionY)
-legacyX = int( 0.8073 * curretResolutionX)
-legacyY = int( 0.0741 * curretResolutionY)
-reincarnateX = int( 0.4922 * curretResolutionX)
-reincarnateY = int( 0.1018 * curretResolutionY)
 input()
-time.sleep(3)
 print('Starting in 3')
+time.sleep(3)
 # starts in 3 seconds, tab into CookieClicker
 
 while controller and loops <= targetAscensions:
