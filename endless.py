@@ -2,27 +2,31 @@ import pyautogui as pya
 import time
 import keyboard
 
-# made the following measures in 1920*1080, feel free to change for other resolutions
-column = 1750 
-upgrades = 150 
-cursors = 310 
-grandmas = 380
-fractals = 840 
-idleverses = 960
-legacyX = 1550
-legacyY = 80
-reincarnateX = 945
-reincarnateY = 110
-# mySave = 
-# control variables 
+# mySave = ;)
 
-controller = True # manual stop if needed, pressing q
+# Control variables 
+curretResolutionX = 1
+curretResolutionY = 1
+controller = True # Manual stop if needed, pressing q
 loops = 1
-targetAscensions = 1000 # change this number if you don't need to do 1000 ascensions
-endingDelay = loops * 0.05 # adds a delay before ascending
+targetAscensions = 1000 # Change this number if you don't need to do 1000 ascensions
+endingDelay = loops * 0.05 # Adds a delay before ascending
 
+# Delays, modify if your PC is Fast, mine is not. Default are tiny: 0.2 seconds and medium: 0.8 seconds
 tinySleep = 0.2
-mediumSleep = 0.5
+mediumSleep = 0.8
+
+# Relative % , commented the pixel measures in 1920*1080
+column = 0.9115 # column = 1750 
+upgrades = 0.1389 # upgrades = 150 
+cursors = 0.2870 # cursors = 310 
+grandmas = 0.3516 # grandmas = 380
+fractals = 0.7778 # fractals = 840 
+idleverses = 0.8889 # idleverses = 960
+legacyX = 0.8073 # legacyX = 1550
+legacyY = 0.0741 # legacyY = 80
+reincarnateX = 0.4922 # reincarnateX = 945
+reincarnateY = 0.1016 # reincarnateY = 110
 
 def buy100s():
     pya.keyDown('shift')
@@ -34,7 +38,7 @@ def buy100s():
     pya.keyUp('shift')
 
 def buyUpgrades():
-    pya.press('home') # this key scrolls up
+    pya.press('home') # This key scrolls up
     time.sleep(mediumSleep)
     pya.moveTo(column, upgrades, duration = 0)
     pya.click()
@@ -46,7 +50,7 @@ def buyUpgrades():
     
 def buyBuildings():
     time.sleep(mediumSleep)
-    buyUpgrades() # scrolls auto up again  
+    buyUpgrades() # Scrolls auto up again  
     time.sleep(mediumSleep) 
     pya.moveTo(column, cursors, duration = 0)
     buy100s()
@@ -56,41 +60,58 @@ def buyBuildings():
     buyUpgrades()
     pya.moveTo(column, grandmas, duration = 0)
     pya.click()
-    pya.press('end')  # scroll down again
+    pya.press('end')  # Scroll down again
     time.sleep(1)
     pya.moveTo(column, fractals, duration = 0)
     buy100s()
     pya.moveTo(column, idleverses, duration = 0)
     buy100s()
     
-# adding a manual stop, this will finish the ascension and stop from looping
+# Adding a manual stop, this will finish the ascension and stop from looping
 def stop():
     if keyboard.is_pressed('q'):
-        print('Handmade Stop')
+        print('Key \'q\' pressed, Handmade stopped after the ascension.')
         global controller
         controller = False
 
-# adding a wrapper function 
+# Adding a wrapper function 
 def oneRound():
     buyBuildings()
-    stop() # press q
+    stop() # Press q!
 
 curretResolutionX, curretResolutionY = pya.size()
 print('Is your current resolution: '+ str(curretResolutionX) + ' * ' + str(curretResolutionY) + ' ?\nPress \'Enter\' to continue, press \'Control + C\' to exit')
 input()
-print('Starting in 3')
-time.sleep(3)
-# starts in 3 seconds, tab into CookieClicker
+
+print('Calculating pixels...')
+column = int( column * curretResolutionX) # 0.9114
+upgrades = int( upgrades * curretResolutionY) # 0.1388
+cursors = int( cursors * curretResolutionY) # 0.2870
+grandmas = int( grandmas * curretResolutionY) # 0.3518
+fractals = int( fractals * curretResolutionY) # 0.7778
+idleverses = int( idleverses * curretResolutionY) #  0.8889
+legacyX = int( legacyX * curretResolutionX) # 0.8073
+legacyY = int( legacyY * curretResolutionY) # 0.0741 
+reincarnateX = int( reincarnateX * curretResolutionX) # 0.4922
+reincarnateY = int( reincarnateY * curretResolutionY) #  0.1018
+
+# Starts in 3 seconds, tab into CookieClicker
+print('Starting in 3...')
+time.sleep(1)
+print('Starting in 2...')
+time.sleep(1)
+print('Starting in 1...')
+time.sleep(1.5)
 
 while controller and loops <= targetAscensions:
-    # add more oneRounds if you don't achieve +1 prestige with 2 of them
+    # Add more oneRounds if you don't achieve +1 prestige with 2 of them
     oneRound()
     oneRound() 
     time.sleep(mediumSleep)
     buyUpgrades()
-    stop() # press q
-    time.sleep(1+endingDelay) # maybe this delay is not needed depending on your prestige level
-    # reincarnation
+    stop() # Press q!
+    time.sleep(1+endingDelay) # Maybe this delay is not needed depending on your prestige level
+    # Reincarnation sequence
     pya.press('home')
     time.sleep(0.2)
     pya.moveTo(legacyX, legacyY, duration = 0)
@@ -102,4 +123,4 @@ while controller and loops <= targetAscensions:
     pya.moveTo(reincarnateX, reincarnateY, duration = 0)
     pya.click()
     pya.press('enter')
-    loops+=1 # loop counter
+    loops+=1 # Ascensions counter
