@@ -15,8 +15,8 @@ import keyboard
 # reincarnateY = 110
 # mySave = 
 # control variables 
-curretResolutionX = 1
-curretResolutionY = 1
+curretResolutionX = 1920
+curretResolutionY = 1080
 controller = True # manual stop if needed, pressing q
 loops = 1
 targetAscensions = 1000 # change this number if you don't need to do 1000 ascensions
