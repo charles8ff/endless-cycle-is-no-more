@@ -5,7 +5,7 @@
 
 - Remember to _**un-vault**_ any upgrades that might carry between ascensions, otherwise it will stop from working properly.
 
-Speed of the script can be improved, but my laptop lagged a bit so it might be slower than needed.
+Speed of the script can be improved, but my laptop lagged a bit so it might be slower than needed. Change 2 numbers and test your setup.
 > I chose to think about a bunch of code  
 > instead of clicking a bunch of times.  
 
