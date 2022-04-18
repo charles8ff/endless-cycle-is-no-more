@@ -3,38 +3,26 @@ import time
 import keyboard
 
 # made the following measures in 1920*1080, feel free to change for other resolutions
-# column = 1750 
-# upgrades = 150 
-# cursors = 310 
-# grandmas = 380
-# fractals = 840 
-# idleverses = 960
-# legacyX = 1550
-# legacyY = 80
-# reincarnateX = 945
-# reincarnateY = 110
+column = 1750 
+upgrades = 150 
+cursors = 310 
+grandmas = 380
+fractals = 840 
+idleverses = 960
+legacyX = 1550
+legacyY = 80
+reincarnateX = 945
+reincarnateY = 110
 # mySave = 
 # control variables 
-curretResolutionX = 1
-curretResolutionY = 1
+
 controller = True # manual stop if needed, pressing q
 loops = 1
 targetAscensions = 1000 # change this number if you don't need to do 1000 ascensions
 endingDelay = loops * 0.05 # adds a delay before ascending
 
 tinySleep = 0.2
-mediumSleep = 0.8
-# relative %
-column = 0.9114 * curretResolutionX
-upgrades = 0.1388 * curretResolutionY
-cursors = 0.2870 * curretResolutionY
-grandmas = 0.3518 * curretResolutionY
-fractals = 0.7778 * curretResolutionY
-idleverses = 0.8889 * curretResolutionY
-legacyX = 0.8073 * curretResolutionX
-legacyY = 0.0741 * curretResolutionY
-reincarnateX = 0.4922 * curretResolutionX
-reincarnateY = 0.1018 * curretResolutionY
+mediumSleep = 0.5
 
 def buy100s():
     pya.keyDown('shift')
