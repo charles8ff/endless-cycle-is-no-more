@@ -87,10 +87,13 @@ def altTabTo(window):
 ########################################################################### Start
 thread = threading.Thread(target=stop)
 
-print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! This is an script, it will perform automatic actions.\nNow we need some locations of your screen...\n')
+print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! '
+      'This is an script, it will perform automatic actions. Do not fear it.'
+      '\nNow we need some locations of your screen...\n')
 # Loop the dict to record coords
 for item in spotsDict:
-    print('In your game, move your cursor where the '+ item + ' is. When ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
+    print('In your game, move your cursor where the '+ item + ' is. '
+          'When ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
     print('Press \'Enter\' to alt-tab to Cookie Clicker.\n\t>')
     input()
     altTabTo('Cookie Clicker')
