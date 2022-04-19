@@ -17,6 +17,7 @@ tinySleep = 0.2
 mediumSleep = 0.8
 
 # Relative % , commented the pixel measures in 1920*1080
+<<<<<<< HEAD
 column = 0.9115 # column = 1750px / 1920
 upgrades = 0.1389 # upgrades = 150px / 1080
 cursors = 0.2870 # cursors = 310px / 1080
@@ -27,6 +28,18 @@ legacyX = 0.8073 # legacyX = 1550px / 1920
 legacyY = 0.0741 # legacyY = 80px / 1080
 reincarnateX = 0.4922 # reincarnateX = 945px / 1920
 reincarnateY = 0.1016 # reincarnateY = 110px / 1080
+=======
+column = 0.9115 # column = 1750 / 1920
+upgrades = 0.1389 # upgrades = 150 / 1080
+cursors = 0.2778 # cursors = 300 / 1080 
+grandmas = 0.3334 # grandmas = 360 / 1080
+fractals = 0.7963 # fractals = 860 / 1080
+idleverses = 0.9074 # idleverses = 980 / 1080
+legacyX = 0.7969 # legacyX = 1530 / 1920
+legacyY = 0.0694 # legacyY = 75 / 1080
+reincarnateX = 0.4948 # reincarnateX = 950
+reincarnateY = 0.1018 # reincarnateY = 110
+>>>>>>> cbc04d6b2b66548ba868f4457db4bf5c617c0c6b
 
 def buy100s():
     pya.keyDown('shift')
@@ -83,17 +96,18 @@ curretResolutionX, curretResolutionY = pya.size()
 print('Is your current resolution: '+ str(curretResolutionX) + ' * ' + str(curretResolutionY) + ' ?\nPress \'Enter\' to continue, press \'Control + C\' to exit')
 input()
 
-print('Calculating pixels...')
-column = int( column * curretResolutionX) # 0.9114
-upgrades = int( upgrades * curretResolutionY) # 0.1388
-cursors = int( cursors * curretResolutionY) # 0.2870
-grandmas = int( grandmas * curretResolutionY) # 0.3518
-fractals = int( fractals * curretResolutionY) # 0.7778
-idleverses = int( idleverses * curretResolutionY) #  0.8889
-legacyX = int( legacyX * curretResolutionX) # 0.8073
-legacyY = int( legacyY * curretResolutionY) # 0.0741 
-reincarnateX = int( reincarnateX * curretResolutionX) # 0.4922
-reincarnateY = int( reincarnateY * curretResolutionY) #  0.1018
+print('Calculating pixels...') # WE HAVE TO MANUAL CLICK
+
+column = column * curretResolutionX
+upgrades = upgrades * curretResolutionY
+cursors = cursors * curretResolutionY
+grandmas = grandmas * curretResolutionY
+fractals = fractals * curretResolutionY
+idleverses = idleverses * curretResolutionY
+legacyX = legacyX * curretResolutionX
+legacyY = legacyY * curretResolutionY
+reincarnateX = reincarnateX * curretResolutionX
+reincarnateY = reincarnateY * curretResolutionY
 
 # Starts in 3 seconds, tabs into CookieClicker
 pya.hotkey('alt', 'tab')
