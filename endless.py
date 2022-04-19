@@ -26,32 +26,6 @@ spotsDict = dict(
         LegacyButton = (0,0),
         ReincarnateButton = (0,0)
         )
-=======
-# Relative % , commented the pixel measures in 1920*1080
-<<<<<<< HEAD
-column = 0.9115 # column = 1750px / 1920
-upgrades = 0.1389 # upgrades = 150px / 1080
-cursors = 0.2870 # cursors = 310px / 1080
-grandmas = 0.3516 # grandmas = 380px / 1080
-fractals = 0.7778 # fractals = 840px / 1080
-idleverses = 0.8889 # idleverses = 960px / 1080
-legacyX = 0.8073 # legacyX = 1550px / 1920
-legacyY = 0.0741 # legacyY = 80px / 1080
-reincarnateX = 0.4922 # reincarnateX = 945px / 1920
-reincarnateY = 0.1016 # reincarnateY = 110px / 1080
-=======
-column = 0.9115 # column = 1750 / 1920
-upgrades = 0.1389 # upgrades = 150 / 1080
-cursors = 0.2778 # cursors = 300 / 1080 
-grandmas = 0.3334 # grandmas = 360 / 1080
-fractals = 0.7963 # fractals = 860 / 1080
-idleverses = 0.9074 # idleverses = 980 / 1080
-legacyX = 0.7969 # legacyX = 1530 / 1920
-legacyY = 0.0694 # legacyY = 75 / 1080
-reincarnateX = 0.4948 # reincarnateX = 950
-reincarnateY = 0.1018 # reincarnateY = 110
->>>>>>> cbc04d6b2b66548ba868f4457db4bf5c617c0c6b
->>>>>>> main
 
 # Functions
 def buy100s():
