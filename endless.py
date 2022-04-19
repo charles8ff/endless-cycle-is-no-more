@@ -6,14 +6,18 @@ import pyautogui as pya
 
 # mySave = ;)
 
-# Control variables 
-loops = 1
-targetAscensions = 1000 # Change this number if you don't need to do 1000 ascensions
-endingDelay = loops * 0.05 # Adds a delay before ascending
+# # Setup variables
+# Number of ascensions that will be done, change this number if you don't need to do 1000 ascensions
+targetAscensions = 1000 
 
 # Delays, modify if your PC is Fast, mine is not. Default are tiny: 0.2 seconds and medium: 0.8 seconds
 tinySleep = 0.2
 mediumSleep = 0.8
+loops = 1 # # # DON'T CHANGE THIS ONE
+endingDelay = loops * 0.05 # Adds a delay before ascending
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # DO NOT MODIFY BELOW # # # # # # # # #
 
 # Where the coords will be stored
 spotsDict = dict(
