@@ -15,7 +15,6 @@ endingDelay = loops * 0.05 # Adds a delay before ascending
 tinySleep = 0.2
 mediumSleep = 0.8
 
-<<<<<<< HEAD
 # Where the coords will be stored
 spotsDict = dict(
         BuyAllUpgrades = (0,0),
