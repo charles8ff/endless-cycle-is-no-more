@@ -162,3 +162,6 @@ def fancyNumber(ascensionsRemaining):
                                                         allNums[str(aux[2])].split('\n')
                                                     )])
     print(result)
+
+def theFun():
+    pass
