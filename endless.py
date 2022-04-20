@@ -99,6 +99,8 @@ print(printables.title)
 printables.cookieLine()
 print('\n\tWelcome to charles8ff\'s Endless Cycle Is No More!'
       '\n\nThis is an script, it will perform automatic actions. Do not fear it. Should not harm anything.'
+      '\n-Remember to disable any mods related to buy/ascend purposes.'
+      '\n-Make a backup in case this does fail.'
       '\n\n\tNow we need some locations of your screen...\n')
 # Loop the dict to record coords
 for item in spotsDict:
