@@ -121,8 +121,9 @@ for item in spotsDict:
             altTabTo('last')
 
 mprint.cookieLine()
-# print('Press \'Enter\' to start the fun.\n\t')  #add art
+print('Press \'Enter\' to start\n')
 mprint.theFun()
+print('\n\t>')
 input()
 thread.start()
 altTabTo('Cookie Clicker')

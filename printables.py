@@ -164,4 +164,10 @@ def fancyNumber(ascensionsRemaining):
     print(result)
 
 def theFun():
-    pass
+    theFun = '''
+       __  __                  ______          
+      / /_/ /_  ___           / ____/_  ______ 
+     / __/ __ \/ _ \         / /_  / / / / __ \
+    / /_/ / / /  __/        / __/ / /_/ / / / /
+    \__/_/ /_/\___/        /_/    \__,_/_/ /_/ 
+    '''
