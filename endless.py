@@ -5,7 +5,7 @@ import time
 import keyboard
 import pyautogui as pya
 
-import printables
+import printables as mprint
 
 # mySave = ;)
 
@@ -23,15 +23,15 @@ endingDelay = loops * 0.05 # Adds a delay before ascending
 # # # # # # # # # DO NOT MODIFY BELOW # # # # # # # # #
 
 # Where the coords will be stored
-spotsDict = dict(
-        BuyAllUpgrades = (0,0),
-        Cursors = (0,0),
-        Grandmas = (0,0),
-        Fractals = (0,0),
-        Idleverses = (0,0),
-        LegacyButton = (0,0),
-        ReincarnateButton = (0,0)
-        )
+spotsDict = {
+        'All Upgrades' : (0,0),
+        'Cursors' : (0,0),
+        'Grandmas' : (0,0),
+        'Fractals' : (0,0),
+        'Idleverses' : (0,0),
+        'Legacy' : (0,0),
+        'Reincarnate' : (0,0)
+        }
 
 # Functions
 def buy100s():
@@ -46,13 +46,13 @@ def buy100s():
 def buyUpgrades():
     pya.press('home') # This key scrolls up
     time.sleep(mediumSleep)
-    pya.moveTo(spotsDict['BuyAllUpgrades'], duration = 0)
+    pya.moveTo(spotsDict['All Upgrades'], duration = 0)
     pya.click()
     time.sleep(mediumSleep)
     pya.click()
     time.sleep(mediumSleep)
     pya.click()
-    pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
+    pya.moveTo(spotsDict['Reincarnate'], duration = 0)
     
 def buyBuildings():
     time.sleep(mediumSleep)
@@ -78,7 +78,8 @@ def stop():
     controller = True
     while controller:
         if keyboard.is_pressed('q'):
-            print('\t> Key \'q\' pressed, Handmade stopped')
+            os.system('cls')
+            print('\n\n\t> Key \'q\' pressed, Handmade stopped')
             controller = False
             altTabTo('last')
             pya.moveTo(0, 0, duration = 0)
@@ -94,18 +95,19 @@ def altTabTo(window):
 ########################################################################### Start
 thread = threading.Thread(target=stop)
 os.system('cls')
-printables.cookieLine()
-print(printables.title)
-printables.cookieLine()
+mprint.cookieLine()
+mprint.title()
+mprint.cookieLine()
 print('\n\tWelcome to charles8ff\'s Endless Cycle Is No More!'
       '\n\nThis is an script, it will perform automatic actions. Do not fear it. Should not harm anything.'
       '\n-Remember to disable any mods related to buy/ascend purposes.'
-      '\n-Make a backup in case this does fail.'
-      '\n\n\tNow we need some locations of your screen...\n')
+      '\n-Make a backup in case this does fail.')
+mprint.credits()
+print('\n\n\tNow we need some button locations of your screen...\n')
 # Loop the dict to record coords
 for item in spotsDict:
-    print('In your game, move your cursor where the '+ item + ' is. '
-          '\nWhen ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
+    print('In your game, move your cursor where the Buy '+ item + ' button is.'
+          '\nWhen ready, press \'Spacebar\' to record Buy '+ item + ' button\'s position in your screen.')
     print('Press \'Enter\' to alt-tab to Cookie Clicker.\n\t>')
     input()
     altTabTo('Cookie Clicker')
@@ -114,15 +116,15 @@ for item in spotsDict:
         if keyboard.is_pressed('space'):
             x, y = pya.position()
             spotsDict[item]= x, y
-            print(item +'\'s location saved!\n\n')
+            print(item +' button\'s location saved!\n\n')
             done = True
             altTabTo('last')
 
-print('Press \'Enter\' to start the fun.\n\t')   
+print('Press \'Enter\' to start the fun.\n\t')  #add art 
 input()
 thread.start()
 altTabTo('Cookie Clicker')
-pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
+pya.moveTo(spotsDict['Reincarnate'], duration = 0)
 pya.click()
 pya.press('enter')
 
@@ -136,14 +138,19 @@ while loops <= targetAscensions:
     # Reincarnation sequence
     pya.press('home')
     time.sleep(0.2)
-    pya.moveTo(spotsDict['LegacyButton'], duration = 0)
+    pya.moveTo(spotsDict['Legacy'], duration = 0)
     pya.click()
     time.sleep(0.5)
     pya.press('enter')
     time.sleep(0.5)
     pya.press('esc')
-    pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
+    pya.moveTo(spotsDict['Reincarnate'], duration = 0)
     pya.click()
     pya.press('enter')
-    printables.printNumber(targetAscensions-loops)
+    # Console Log of The Fancy Numbers
+    # os.system('cls')
+    mprint.cookieLine()
+    mprint.ascensionTitle()
+    mprint.fancyNumber(targetAscensions-loops)
+    mprint.cookieLine()
     loops+=1 # Ascensions counter
