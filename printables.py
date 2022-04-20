@@ -132,16 +132,36 @@ num0  = '''
     ╚██████╔╝
      ╚═════╝ 
 '''
-numTEST =  '''\n     ██████╗\n     ██╔═████╗\n    ██║██╔██║\n    ████╔╝██║\n    ╚██████╔╝\n     ╚═════╝ \n'''
+
+allNums = {
+        '0' : num0,
+        '1' : num1, 
+        '2' : num2, 
+        '3' : num3, 
+        '4' : num4, 
+        '5' : num5, 
+        '6' : num6, 
+        '7' : num7, 
+        '8' : num8, 
+        '9' : num9
+        }
+# result = '\n'.join([''.join(elem) for elem in zip(num1.split('\n'), num0.split('\n'))])
+# result2 = '\n'.join([''.join(elem) for elem in zip(num1.split('\n'), num0.split('\n'), num0.split('\n'))])
+def printNumber(ascensionsRemaining):
+  result = ''
+  aux = [int(d) for d in str(ascensionsRemaining)]
+
+  if len(aux) < 2:
+    aux.insert(0,0)
+  if len(aux) < 3:
+    aux.insert(0,0)
+  
+  result = '\n'.join([''.join(elem) for elem in zip(allNums[str(aux[0])].split('\n'),
+                                                    allNums[str(aux[1])].split('\n'),
+                                                    allNums[str(aux[2])].split('\n')
+                                                    )]) 
+  print(result)
 os.system('cls')
-# print (num1 + num0)
-aux = ''
-for i in range(0,5): #6
-  for j in range(1,14):
-    aux = aux + num1[i+j]
-  for k in range (1,14):
-    aux = aux + num0[i+k]
-  # aux = aux + '\n'
 print('start')
-print (aux)
-print('end')
+print(ascensionTitle)
+printNumber(6)
