@@ -1,8 +1,10 @@
-import time
 import os
-cookieLine = ''
-for i in range(0,70):
-    cookieLine = cookieLine + '\U0001F36A'
+
+def cookieLine():
+  cookieLine = ''
+  for i in range(0,70):
+      cookieLine = cookieLine + '\U0001F36A'
+  print(cookieLine)
 
 title = '''
   ____            _    _         ____ _ _      _            
@@ -160,8 +162,5 @@ def printNumber(ascensionsRemaining):
                                                     allNums[str(aux[1])].split('\n'),
                                                     allNums[str(aux[2])].split('\n')
                                                     )]) 
+  os.system('cls')
   print(result)
-os.system('cls')
-print('start')
-print(ascensionTitle)
-printNumber(6)

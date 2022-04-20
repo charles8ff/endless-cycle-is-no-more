@@ -5,6 +5,8 @@ import time
 import keyboard
 import pyautogui as pya
 
+import printables
+
 # mySave = ;)
 
 # # Setup variables
@@ -91,14 +93,17 @@ def altTabTo(window):
         
 ########################################################################### Start
 thread = threading.Thread(target=stop)
-
-print('\n\nWelcome to charles8ff\'s Endless Cycle Is No More! '
-      'This is an script, it will perform automatic actions. Do not fear it.'
-      '\nNow we need some locations of your screen...\n')
+os.system('cls')
+printables.cookieLine()
+print(printables.title)
+printables.cookieLine()
+print('\n\tWelcome to charles8ff\'s Endless Cycle Is No More!'
+      '\n\nThis is an script, it will perform automatic actions. Do not fear it. Should not harm anything.'
+      '\n\n\tNow we need some locations of your screen...\n')
 # Loop the dict to record coords
 for item in spotsDict:
     print('In your game, move your cursor where the '+ item + ' is. '
-          'When ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
+          '\nWhen ready, press \'Spacebar\' to record '+ item + '\'s position in your screen.')
     print('Press \'Enter\' to alt-tab to Cookie Clicker.\n\t>')
     input()
     altTabTo('Cookie Clicker')
@@ -138,5 +143,5 @@ while loops <= targetAscensions:
     pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
     pya.click()
     pya.press('enter')
-    print('ASCENSIONS REMAINING: '+ str(targetAscensions-loops) +'!!!')
+    printables.printNumber(targetAscensions-loops)
     loops+=1 # Ascensions counter
