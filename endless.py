@@ -137,5 +137,5 @@ while loops <= targetAscensions:
     pya.moveTo(spotsDict['ReincarnateButton'], duration = 0)
     pya.click()
     pya.press('enter')
-    loops+=1 # Ascensions counter
     print('ASCENSIONS REMAINING: '+ str(targetAscensions-loops) +'!!!')
+    loops+=1 # Ascensions counter
