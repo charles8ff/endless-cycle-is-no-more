@@ -3,7 +3,7 @@ def cookieLine():
   for i in range(0,70):
       cookieLine = cookieLine + '\U0001F36A'
   print(cookieLine)
-  
+
 def title():
     title = '''
           ____            _    _         ____ _ _      _            
@@ -20,7 +20,7 @@ def title():
                                                                                     /_/ 
     '''
     print(title)
-    
+
 def credits():
     
     credits = '''
@@ -31,7 +31,7 @@ def credits():
     ▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▄▄▄▄▄▀▄▀▄▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀█▄▄█▀▄▄▄▀▀▀▄▄▄▀▀▀
     '''
     print(credits)
-    
+
 def ascensionTitle():
     
     ascensionTitle = '''
@@ -87,7 +87,7 @@ num4 = '''
          ╚═╝
 '''
 
-num5  = '''
+num5 = '''
     ███████╗
     ██╔════╝
     ███████╗
@@ -96,7 +96,7 @@ num5  = '''
     ╚══════╝
 '''
 
-num6  = '''
+num6 = '''
      ██████╗ 
     ██╔════╝ 
     ███████╗ 
@@ -105,7 +105,7 @@ num6  = '''
      ╚═════╝            
 '''
 
-num7  = '''
+num7 = '''
     ███████╗
     ╚════██║
         ██╔╝
@@ -114,7 +114,7 @@ num7  = '''
        ╚═╝  
 '''
 
-num8  = '''
+num8 = '''
      █████╗ 
     ██╔══██╗
     ╚█████╔╝
@@ -123,7 +123,7 @@ num8  = '''
      ╚════╝ 
 '''
 
-num9  = '''
+num9 = '''
      █████╗ 
     ██╔══██╗
     ╚██████║
@@ -132,7 +132,7 @@ num9  = '''
      ╚════╝ 
 '''
 
-num0  = '''
+num0 = '''
      ██████╗ 
     ██╔═████╗
     ██║██╔██║
@@ -142,29 +142,23 @@ num0  = '''
 '''
 
 allNums = {
-        '0' : num0,
-        '1' : num1, 
-        '2' : num2, 
-        '3' : num3, 
-        '4' : num4, 
-        '5' : num5, 
-        '6' : num6, 
-        '7' : num7, 
-        '8' : num8, 
-        '9' : num9
-        }
+    '0' : num0, '1' : num1, '2' : num2,
+    '3' : num3, '4' : num4, '5' : num5,
+    '6' : num6, '7' : num7, '8' : num8,
+    '9' : num9
+    }
 
 def fancyNumber(ascensionsRemaining):
-  result = ''
-  aux = [int(d) for d in str(ascensionsRemaining)]
+    result = ''
+    aux = [int(d) for d in str(ascensionsRemaining)]
 
-  if len(aux) < 2:
-    aux.insert(0,0)
-  if len(aux) < 3:
-    aux.insert(0,0)
-  
-  result = '\n'.join([''.join(elem) for elem in zip(allNums[str(aux[0])].split('\n'),
-                                                    allNums[str(aux[1])].split('\n'),
-                                                    allNums[str(aux[2])].split('\n')
+    if len(aux) < 2:
+        aux.insert(0,0)
+    if len(aux) < 3:
+        aux.insert(0,0)
+
+    result = '\n'.join([''.join(elem) for elem in zip(  allNums[str(aux[0])].split('\n'),
+                                                        allNums[str(aux[1])].split('\n'),
+                                                        allNums[str(aux[2])].split('\n')
                                                     )])
-  print(result)
+    print(result)
