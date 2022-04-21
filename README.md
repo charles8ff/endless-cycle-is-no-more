@@ -28,6 +28,8 @@ Spots that the script will ask you for:
 
 images
 
+:exclamation_mark: _**UN VAULT STUFF**_
+
 ## Advanced tips
 
 \-> Speed of the script may be improved (99% sure by a lot), but my laptop lagged so it might be slower than needed. Change _tinySleep_, _mediumSleep_ or _endingDelay_ and test your setup. Both your pc performance and the prestige levels you already have will affect how fast you can ascend. Remember prestige scales, and in 1000 ascensions it _does_ scale.
