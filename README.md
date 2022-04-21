@@ -1,4 +1,4 @@
-# Achieveing Endless Cycle Backseated
+# Achieving Endless Cycle Backseated
 #### Run this code, leave your game overnight, get Reincarnation and Endless Cycle achievements
 
 :cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie:
