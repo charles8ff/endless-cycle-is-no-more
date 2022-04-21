@@ -1,16 +1,16 @@
 # Achieveing Endless Cycle Backseated
-## Run this code, leave your game overnight, get Reincarnation and Endless Cycle achievements
+#### Run this code, leave your game overnight, get Reincarnation and Endless Cycle achievements
 
 :cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie:
 
 > I chose to think about a bunch of code   
 > Instead of clicking a bunch of times.  
-### What is this
+## What is this
 
 This is a script, an automated process to ascend several times in a row. This program asks the user to record your mouse position in some key places in order to achieve ascensions without further help.
 
 __**:warning::construction::warning: Sections below under construction :warning::construction::warning:**__
-### Requirements
+## Requirements
 
 - Cookie Clicker Game Running
 - Visual Studio Code or the IDE of your choosing
@@ -20,7 +20,7 @@ __**:warning::construction::warning: Sections below under construction :warning:
 py -m install -r requirements.txt
 ````
 
-### Instructions
+## Instructions
 
 \-> Once the script starts, you will do an ascension alt-tabbing to the script until it gathers all the information it needs, and then it will repeat the process all the times you set it for, with the parameter _targetAscensions_. Does by default 1000 ascensions.
 
@@ -28,7 +28,7 @@ Spots that the script will ask you for:
 
 images
 
-### Advanced tips
+## Advanced tips
 
 \-> Speed of the script may be improved (99% sure by a lot), but my laptop lagged so it might be slower than needed. Change _tinySleep_, _mediumSleep_ or _endingDelay_ and test your setup. Both your pc performance and the prestige levels you already have will affect how fast you can ascend. Remember prestige scales, and in 1000 ascensions it _does_ scale.
 
