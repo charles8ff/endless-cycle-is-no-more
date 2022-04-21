@@ -11,6 +11,7 @@ import printables as mprint
 
 # # Setup variables
 # Number of ascensions that will be done, change this number if you don't need to do 1000 ascensions
+# First guided ascension is included in this math
 targetAscensions = 1000 
 
 # Delays, modify if your PC is Fast, mine is not. Default are tiny: 0.2 seconds and medium: 0.8 seconds
@@ -79,7 +80,7 @@ def stop():
     while controller:
         if keyboard.is_pressed('q'):
             os.system('cls')
-            print('\n\n\t> Key \'q\' pressed, Handmade stopped')
+            print('\n\n\t> Key \'q\' pressed, Handmade stopped.\n\t'+ str(targetAscensions-loops) + ' ascensions remaining.')
             controller = False
             altTabTo('last')
             pya.moveTo(0, 0, duration = 0)
@@ -130,6 +131,7 @@ altTabTo('Cookie Clicker')
 pya.moveTo(spotsDict['Reincarnate'], duration = 0)
 pya.click()
 pya.press('enter')
+loops+=1
 
 while loops <= targetAscensions:
     # Add more buyBuildings if you don't achieve +1 prestige with 2 of them
@@ -151,7 +153,7 @@ while loops <= targetAscensions:
     pya.click()
     pya.press('enter')
     # Console Log of The Fancy Numbers
-    # os.system('cls')
+    os.system('cls')
     mprint.cookieLine()
     mprint.ascensionTitle()
     mprint.fancyNumber(targetAscensions-loops)
