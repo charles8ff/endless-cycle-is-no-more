@@ -19,16 +19,22 @@ __**:warning::construction::warning: Sections below under construction :warning:
 ````
 py -m install -r requirements.txt
 ````
-
+Once you got everything ready, you can run the script and some following instructions will appear on the console. Follow those!
 ## Instructions
 
 \-> Once the script starts, you will do an ascension alt-tabbing to the script until it gathers all the information it needs, and then it will repeat the process all the times you set it for, with the parameter _targetAscensions_. Does by default 1000 ascensions.
 
+:exclamation_mark::exclamation_mark::exclamation_mark: Remember to _**UN VAULT**_ any upgrade you might have vaulted! If the vault appears in one off the ascensions all the pots will move (because the game needs to pop the vault in between) and it might fail to ascend!
+
 Spots that the script will ask you for:
+
+1. Buy All Upgrades Button
+
+[Imgur](https://i.imgur.com/qzpUl6i.jpg)
+
 
 images
 
-:exclamation_mark: _**UN VAULT STUFF**_
 
 ## Advanced tips
 
