@@ -24,7 +24,7 @@ Once you got everything ready, you can run the script and some following instruc
 
 \-> Once the script starts, you will do an ascension alt-tabbing to the script until it gathers all the information it needs, and then it will repeat the process all the times you set it for, with the parameter _targetAscensions_. Does by default 1000 ascensions.
 
-:exclamation_mark::exclamation_mark::exclamation_mark: Remember to _**UN VAULT**_ any upgrade you might have vaulted! If the vault appears in one off the ascensions all the pots will move (because the game needs to pop the vault in between) and it might fail to ascend!
+:exclamation::exclamation::exclamation: Remember to _**UN VAULT**_ any upgrade you might have vaulted! If the vault appears in one off the ascensions all the pots will move (because the game needs to pop the vault in between) and it might fail to ascend!
 
 Spots that the script will ask you for:
 
@@ -32,7 +32,7 @@ Spots that the script will ask you for:
 | ------------- | ------------- | ------------- |
 | <a href="https://imgur.com/qzpUl6i"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a> | <a href="https://imgur.com/xGTRaww"><img src="https://i.imgur.com/xGTRaww.jpg?1" title="source: imgur.com" /></a> | <a href="https://imgur.com/2LwE58Q"><img src="https://i.imgur.com/2LwE58Q.jpg?1" title="source: imgur.com" /></a> |
  
-:exclamation_mark: Now you need to scroll all the way down, you can press 'End' key (the script will do that) to record the lower building's positions
+:exclamation: Now you need to scroll all the way down, you can press 'End' key (the script will do that) to record the lower building's positions
 
 ## Advanced tips
 
