@@ -30,10 +30,8 @@ Spots that the script will ask you for:
 
 1. Buy All Upgrades Button
 
-[Imgur](https://i.imgur.com/qzpUl6i.jpg)
+<a href="https://imgur.com/qzpUl6i"  style="text-align: center"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com"/></a>
 
-
-images
 
 
 ## Advanced tips
