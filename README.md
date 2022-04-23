@@ -28,11 +28,11 @@ Once you got everything ready, you can run the script and some following instruc
 
 Spots that the script will ask you for:
 
-1. Buy All Upgrades Button
-
-<a href="https://imgur.com/qzpUl6i"  style="text-align: center"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com"/></a>
-
-
+| 1. Buy All Upgrades Button | 2. Buy Cursors Button  | 3. Buy Grandmas Button
+| ------------- | ------------- | ------------- |
+| <a href="https://imgur.com/qzpUl6i"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a> | <a href="https://imgur.com/xGTRaww"><img src="https://i.imgur.com/xGTRaww.jpg?1" title="source: imgur.com" /></a> | <a href="https://imgur.com/2LwE58Q"><img src="https://i.imgur.com/2LwE58Q.jpg?1" title="source: imgur.com" /></a> |
+ 
+:exclamation_mark: Now you need to scroll all the way down, you can press 'End' key (the script will do that) to record the lower building's positions
 
 ## Advanced tips
 
