@@ -32,8 +32,17 @@ Spots that the script will ask you for:
 | ------------- | ------------- | ------------- |
 | <a href="https://imgur.com/qzpUl6i"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a> | <a href="https://imgur.com/xGTRaww"><img src="https://i.imgur.com/xGTRaww.jpg?1" title="source: imgur.com" /></a> | <a href="https://imgur.com/2LwE58Q"><img src="https://i.imgur.com/2LwE58Q.jpg?1" title="source: imgur.com" /></a> |
  
-:exclamation: Now you need to scroll all the way down, you can press 'End' key (the script will do that) to record the lower building's positions
+:exclamation::exclamation: Now you need to scroll all the way down, you can press 'End' key (the script will do that) to record the lower building's positions. Be sure to scroll _all_ the way down.
 
+| 4. Buy Fractals Button | 5. Buy Idleverses Button  |
+| ------------- | ------------- | 
+|<a href="https://imgur.com/bDozsdm"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a>  | <a href="https://imgur.com/pQ4Relh"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a> |
+
+Then, the 2 lasts spots are the 'Legacy' button and the 'Reincarnate' button, and that will be the final steps of the 'hand-made' ascension. After that, the script will start copying the process.
+
+| 6. Legacy Button | 7. Reincarnate Button  |
+| ------------- | ------------- | 
+|<a href="https://imgur.com/HalsZm0"><img src="https://i.imgur.com/qzpUl6i.jpg" title="source: imgur.com" /></a>  | <a href="https://imgur.com/pQ4Relh"><img src="https://imgur.com/kWjBlW3" title="source: imgur.com" /></a> |
 ## Advanced tips
 
 \-> Speed of the script may be improved (99% sure by a lot), but my laptop lagged so it might be slower than needed. Change _tinySleep_, _mediumSleep_ or _endingDelay_ and test your setup. Both your pc performance and the prestige levels you already have will affect how fast you can ascend. Remember prestige scales, and in 1000 ascensions it _does_ scale.
