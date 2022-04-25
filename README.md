@@ -9,7 +9,7 @@
 
 This is a script, an automated process to ascend several times in a row. This program asks the user to record your mouse position in some key places in order to achieve ascensions without further help.
 
-__**:warning::construction::warning: Sections below under construction :warning::construction::warning:**__
+
 ## Requirements
 
 - Cookie Clicker Game Running
