@@ -43,6 +43,10 @@ Then, the 2 lasts spots are the 'Legacy' button and the 'Reincarnate' button, an
 | 6. Legacy Button | 7. Reincarnate Button  |
 | ------------- | ------------- | 
 |<a href="https://imgur.com/HalsZm0"><img src="https://i.imgur.com/HalsZm0.jpg" title="source: imgur.com" /></a>  | <a href="https://imgur.com/kWjBlW3"><img src="https://imgur.com/kWjBlW3.jpg" title="source: imgur.com" /></a> |
+
+And everything's ready! :sunglasses: Now the script will start to run when you press 'Enter'.
+
+The script takes into account this first ascension and does the remaining ones depending how many you asked it to do in the _targetAscensions_ field.
 ## Advanced tips
 
 \-> Speed of the script may be improved (99% sure by a lot), but my laptop lagged so it might be slower than needed. Change _tinySleep_, _mediumSleep_ or _endingDelay_ and test your setup. Both your pc performance and the prestige levels you already have will affect how fast you can ascend. Remember prestige scales, and in 1000 ascensions it _does_ scale.
@@ -55,4 +59,3 @@ Package Versions:
 ````
 
 > Inspired by Pegasus280.
-
