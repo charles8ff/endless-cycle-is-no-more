@@ -1,6 +1,8 @@
 # Achieving Endless Cycle Backseated
 #### Run this code, leave your game overnight, get Reincarnation and Endless Cycle achievements
 
+> I am aware that v2.048 might have messed up the strategy in order to do the _fastests_ ascensions, but the script should still do the job. Any issues contact me here or in my socials.
+
 :cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie::cookie:
 
 > I chose to think about a bunch of code   
