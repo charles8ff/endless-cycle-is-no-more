@@ -10,28 +10,29 @@ import printables as mprint
 # mySave = ;)
 
 # # Setup variables
-# Number of ascensions that will be done, change this number if you don't need to do 1000 ascensions
+# Number of ascensions that will be done, change this number if you don't need
+# to do 1000 ascensions
 # First guided ascension is included in this math
-targetAscensions = 1000 
-
-# Delays, modify if your PC is Fast, mine is not. Default are tiny: 0.2 seconds and medium: 0.8 seconds
+targetAscensions = 1000
+# Delays, modify if your PC is Fast, mine is not.
+# Default are tiny: 0.2 seconds and medium: 0.8 seconds
 tinySleep = 0.2
 mediumSleep = 0.8
-loops = 1 # # # DON'T CHANGE THIS ONE
-endingDelay = loops * 0.05 # Adds a delay before ascending
+loops = 1  # # # DON'T CHANGE THIS ONE
+endingDelay = loops * 0.05  # Adds a delay before ascending
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # DO NOT MODIFY BELOW # # # # # # # # #
 
 # Where the coords will be stored
 spotsDict = {
-        'All Upgrades' : (0,0),
-        'Cursors' : (0,0),
-        'Grandmas' : (0,0),
-        'Fractals' : (0,0),
-        'Idleverses' : (0,0),
-        'Legacy' : (0,0),
-        'Reincarnate' : (0,0)
+        'All Upgrades' : (0, 0), 
+        'Cursors' : (0, 0),
+        'Grandmas' : (0, 0),
+        'Fractals' : (0, 0),
+        'Idleverses' : (0, 0),
+        'Legacy' : (0, 0),
+        'Reincarnate' : (0, 0)
         }
 
 # Functions
@@ -54,7 +55,7 @@ def buyUpgrades():
     time.sleep(mediumSleep)
     pya.click()
     pya.moveTo(spotsDict['Reincarnate'], duration = 0)
-    
+
 def buyBuildings():
     time.sleep(mediumSleep)
     buyUpgrades() # Scrolls auto up again  
@@ -73,7 +74,7 @@ def buyBuildings():
     buy100s()
     pya.moveTo(spotsDict['Idleverses'], duration = 0)
     buy100s()
-    
+
 # Adding a manual stop, this will finish the ascension and stop from looping
 def stop():
     controller = True
@@ -84,7 +85,7 @@ def stop():
             controller = False
             altTabTo('last')
             pya.moveTo(0, 0, duration = 0)
-    
+   
 # Tab function
 def altTabTo(window):
     if window == 'last':
@@ -92,7 +93,7 @@ def altTabTo(window):
     else:
         pya.getWindowsWithTitle(window)[0].minimize()
         pya.getWindowsWithTitle(window)[0].maximize()
-        
+      
 ########################################################################### Start
 thread = threading.Thread(target=stop)
 os.system('cls')
